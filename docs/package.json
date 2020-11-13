@@ -1,0 +1,19 @@
+{
+  "name": "Rcwl",
+  "version": "0.0.1",
+  "description": "R and Bioconductor toolchain for bioinformatics tools and workflows",
+  "main": "index.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": "https://github.com/Rworkflow/Rcwl/Rcwl",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
