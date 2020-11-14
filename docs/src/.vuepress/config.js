@@ -39,7 +39,7 @@ module.exports = {
       },
       {
         text: 'Tutorials',
-        link: 'https://hubentu.github.io/Rcwl/'
+        link: 'https://rworkflow.github.io/RcwlBook/'
       },
       {
         text: 'Rcwl',
