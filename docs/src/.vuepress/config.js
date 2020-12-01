@@ -48,6 +48,10 @@ module.exports = {
       {
         text: 'RcwlPipelines',
         link: 'https://rworkflow.github.io/RcwlPipelines/' 	    
+      },
+      {
+	  text: 'Contact Us',
+	  link: '/about/',
       }
     ],
     sidebar: {

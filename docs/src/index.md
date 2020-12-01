@@ -11,5 +11,5 @@ features:
   details: Hundreds of pre-built and highly modularized bioinformatics tools and pipelines for common bioinformatics tasks, e.g., variant calling, read alignment, neoantigen prediction, etc. 
 - title: Community efforts
   details: Will be providing best practice pipeline development guidelines, and benchmark datasets to facilitate community contribution of high-quality workflows.  
-footer: Made by  Rcwl group with ❤️
+footer:
 ---
