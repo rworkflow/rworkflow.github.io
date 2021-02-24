@@ -1,6 +1,6 @@
-# Rcwl
+# RcwlPipelines (for users)
 
-The Rcwl package can be a simple and user-friendly way to manage command line tools and build data analysis pipelines in R using Common Workflow Language (CWL).
+The RcwlPipelines package manages a collection of Bioinformatics tools and pipeline recipes based on Rcwl. The pre-built and pre-tested tools and pipelines are highly modularized with easy customization to meet different bioinformatics data analysis needs.
 
 ## Installation
 
@@ -9,14 +9,22 @@ The package can be installed from Bioconductor (>= 3.9):
 ``` r
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-BiocManager::install("Rcwl")
+BiocManager::install("RcwlPipelines")
 	
 # Or from github
-BiocManager::install("hubentu/Rcwl")
+BiocManager::install("rworkflow/RcwlPipelines")
+```
+
+## Get started
+
+``` r
+cwlUpdate()
+cwlSearch("STAR")
+STAR <- cwlLoad("tl_STAR")
 ```
 
 ## User Guide
 
 ``` r
-vignette(package = "Rcwl")
+vignette(package = "RcwlPipelines")
 ```

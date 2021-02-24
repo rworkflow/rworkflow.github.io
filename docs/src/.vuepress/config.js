@@ -61,7 +61,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
-            'RcwlPipelines',
+            'Rcwl',
           ]
         }
       ],

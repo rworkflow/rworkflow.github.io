@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: ./Rcwl_hello.png
+heroImage: ./Rcwl_diagram.png
 tagline: R and Bioconductor toolchain for bioinformatics tools and workflows
 actionText: Quick Start →
 actionLink: /guide/
