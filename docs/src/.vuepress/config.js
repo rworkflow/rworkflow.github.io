@@ -38,6 +38,12 @@ module.exports = {
         link: '/guide/',
       },
       {
+        text: 'Case studies',
+        items: [	
+          { text: 'scRNA-seq preprocessing', link: '/case_studies/scrnaseq/' }
+        ]
+      },
+      {
         text: 'Tutorials',
         link: 'https://rworkflow.github.io/RcwlBook/'
       },
@@ -62,6 +68,15 @@ module.exports = {
           children: [
             '',
             'Rcwl',
+          ]
+        }
+      ],
+      '/case_studies/scrnaseq/': [
+        {
+          title: '',
+          collapsable: false,
+          children: [
+            '',
           ]
         }
       ],
