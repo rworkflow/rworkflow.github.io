@@ -38,6 +38,10 @@ module.exports = {
         link: '/guide/',
       },
       {
+        text: 'Recipes',
+        link: '/recipes/',
+      },
+      {
         text: 'Tutorials',
         link: 'https://rworkflow.github.io/RcwlBook/'
       },
