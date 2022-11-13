@@ -1,3 +1,6 @@
-# Recipes
+---
+sidebar: false
+---
+
 
 <posts />
