@@ -2,7 +2,7 @@
 <v-container>
     <v-row>
         <v-col v-for="page in pages" :key="page.title" sm="6">
-            <v-card>
+            <v-card height=180>
                 <router-link :to="page.path">
                     <v-card-title>{{ page.title }}</v-card-title>
                 </router-link>

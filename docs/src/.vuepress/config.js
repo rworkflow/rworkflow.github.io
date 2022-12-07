@@ -38,8 +38,8 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'Recipes',
-        link: '/recipes/',
+        text: 'Data Recipes',
+        link: '/dataRecipes/',
       },
       {
         text: 'Case studies',
@@ -95,6 +95,7 @@ module.exports = {
     '@vuepress/plugin-medium-zoom',
     ["vuepress-plugin-auto-sidebar", {
       // options
+	mode: "default"
     }]
   ]
 }
