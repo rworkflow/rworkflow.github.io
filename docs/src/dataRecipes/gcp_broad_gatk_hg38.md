@@ -20,8 +20,8 @@ GATK annotation bundle for hg38 from GCP (gs://gcp-public-data--broad-references
 |gfile |gfile |File[] |The downloaded annotation files |
 ## Example:
 ```
-rcp <- recipeLoad('gcp_broad_gatk_hg38')
-rcp$filename <- '1000G_omni2.5.hg38.vcf.gz'
-getData(rcp, outdir = 'data/folder', notes = c('gcp', 'broad', 'reference', 'hg38', 'v0', '1000G', 'omni2.5')
+recipeLoad('gcp_broad_gatk_hg38', return = TRUE)
+gcp_broad_gatk_hg38$filename <- '1000G_omni2.5.hg38.vcf.gz'
+getData(gcp_broad_gatk_hg38, outdir = 'data/folder', notes = c('gcp', 'broad', 'reference', 'hg38', 'v0', '1000G', 'omni2.5')
 ```
 

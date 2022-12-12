@@ -21,10 +21,10 @@ Download and unzip annotation files from gencode<br>Data source: <http://ftp.ebi
 ## Example:
 ```
 ## Get data from evaluting recipe
-rcp <- recipeLoad('gencode_annotation')
-rcp$species <- 'human'
-rcp$version <- '42'
-getData(rcp, outdir = 'data/folder', notes = c('gencode', 'annotation', 'human', '42')
+recipeLoad('gencode_annotation', return = TRUE)
+gencode_annotation$species <- 'human'
+gencode_annotation$version <- '42'
+getData(gencode_annotation, outdir = 'data/folder', notes = c('gencode', 'annotation', 'human', '42')
 
 ## Get data from Google bucket directly
 dataUpdate('data/folder', cloud=TRUE)

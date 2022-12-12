@@ -21,10 +21,10 @@ Download, unzip, and index transcripts files from gencode<br>Data source: <http:
 ## Example:
 ```
 ## Get data from evaluating recipe
-rcp <- recipeLoad('gencode_transcripts')
-rcp$species <- 'mouse'
-rcp$version <- 'M31'
-getData(rcp, outdir = 'data/folder', notes = c('gencode', 'transcripts', 'mouse', 'M31')
+recipeLoad('gencode_transcripts', return = TRUE)
+gencode_transcripts$species <- 'mouse'
+gencode_transcripts$version <- 'M31'
+getData(gencode_transcripts, outdir = 'data/folder', notes = c('gencode', 'transcripts', 'mouse', 'M31')
 
 ## Get data from Google bucket directly
 dataUpdate('data/folder', cloud=TRUE)

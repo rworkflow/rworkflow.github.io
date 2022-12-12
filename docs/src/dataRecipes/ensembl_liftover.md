@@ -22,11 +22,11 @@ Download and unzip genome liftover file from Ensembl<br>Data source: <https://ft
 ## Example:
 ```
 ## Get data from evaluting recipe
-rcp <- recipeLoad('ensembl_liftover')
-rcp$species <- 'human'
-rcp$from <- 'GRCh37'
-rcp$to <- 'GRCh38'
-getData(rcp, outdir = 'data/folder', notes = c('grch37', 'grch38')
+recipeLoad('ensembl_liftover', return = TRUE)
+ensembl_liftover$species <- 'human'
+ensembl_liftover$from <- 'GRCh37'
+ensembl_liftover$to <- 'GRCh38'
+getData(ensembl_liftover, outdir = 'data/folder', notes = c('grch37', 'grch38')
 
 ## Get data from Google bucket directly
 dataUpdate('data/folder', cloud=TRUE)

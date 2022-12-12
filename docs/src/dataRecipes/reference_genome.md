@@ -19,8 +19,8 @@ Download (if not previously exist as a local file), rename (as *.fa), and index 
 |fa |indexed reference genome |File |*.fa, *.fai files, and some secondary files |
 ## Example:
 ```
-rcp <- recipeLoad(reference_genome)
-rcp$fasta = 'http://ftp.ensembl.org/pub/release-104/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.chromosome.MT.fa.gz'
-getData(rcp, outdir = 'data/folder', notes = c('homo sapiens', 'grch38', 'ensembl'), conda = TRUE, docker = FALSE)
+recipeLoad(reference_genome, return=TRUE)
+reference_genome$fasta = 'http://ftp.ensembl.org/pub/release-104/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.chromosome.MT.fa.gz'
+getData(reference_genome, outdir = 'data/folder', notes = c('homo sapiens', 'grch38', 'ensembl'), conda = TRUE, docker = FALSE)
 ```
 
