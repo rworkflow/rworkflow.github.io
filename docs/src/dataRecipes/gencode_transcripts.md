@@ -2,7 +2,7 @@
 title: gencode transcripts
 description: Download, unzip, and index transcripts files from gencode
 Author: rworkflow team
-Last updated: 2022-12-09
+Last updated: 2022-12-12
 type: article
 ---
 ## gencode transcripts
@@ -24,7 +24,7 @@ Download, unzip, and index transcripts files from gencode<br>Data source: <http:
 rcp <- recipeLoad('gencode_transcripts')
 rcp$species <- 'mouse'
 rcp$version <- 'M31'
-getData(rcp, outdir = 'data/folder', prefix = 'gencode_transcripts_mouse_M31', notes = c('gencode', 'transcripts', 'mouse', 'M31')
+getData(rcp, outdir = 'data/folder', notes = c('gencode', 'transcripts', 'mouse', 'M31')
 
 ## Get data from Google bucket directly
 dataUpdate('data/folder', cloud=TRUE)

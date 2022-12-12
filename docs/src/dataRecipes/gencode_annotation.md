@@ -2,7 +2,7 @@
 title: gencode annotation
 description: Download and unzip annotation files from gencode
 Author: rworkflow team
-Last updated: 2022-12-09
+Last updated: 2022-12-12
 type: article
 ---
 ## gencode annotation
@@ -24,7 +24,7 @@ Download and unzip annotation files from gencode<br>Data source: <http://ftp.ebi
 rcp <- recipeLoad('gencode_annotation')
 rcp$species <- 'human'
 rcp$version <- '42'
-getData(rcp, outdir = 'data/folder', prefix = 'gencode_annotation_human_42', notes = c('gencode', 'annotation', 'human', '42')
+getData(rcp, outdir = 'data/folder', notes = c('gencode', 'annotation', 'human', '42')
 
 ## Get data from Google bucket directly
 dataUpdate('data/folder', cloud=TRUE)

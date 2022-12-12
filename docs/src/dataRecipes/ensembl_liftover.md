@@ -2,7 +2,7 @@
 title: genome liftover
 description: Download and unzip genome liftover file from Ensembl
 Author: rworkflow team
-Last updated: 2022-12-09
+Last updated: 2022-12-12
 type: article
 ---
 ## genome liftover
@@ -26,7 +26,7 @@ rcp <- recipeLoad('ensembl_liftover')
 rcp$species <- 'human'
 rcp$from <- 'GRCh37'
 rcp$to <- 'GRCh38'
-getData(rcp, outdir = 'data/folder', prefix = 'ensemble_grch37_38', notes = c('grch37', 'grch38')
+getData(rcp, outdir = 'data/folder', notes = c('grch37', 'grch38')
 
 ## Get data from Google bucket directly
 dataUpdate('data/folder', cloud=TRUE)
