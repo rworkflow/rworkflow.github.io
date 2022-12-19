@@ -1,14 +1,14 @@
 ---
-title: GCP broad gatk hg38
-description: GATK annotation bundle for hg38 from GCP (gs://gcp-public-data--broad-references/hg38/v0/)
+title: gcp gatk mutect2 b37
+description: GATK mutect2 bundle for b37 from GCP (gs://gatk-best-practices/somatic-b37)
 Author: rworkflow team
 Last updated: 2022-12-19
 type: article
 ---
-## GCP_broad_gatk_hg38
-GATK annotation bundle for hg38 from GCP (gs://gcp-public-data--broad-references/hg38/v0/)<br>Data source: <https://console.cloud.google.com/storage/browser/gcp-public-data--broad-references/hg38/v0>
+## gcp_gatk_mutect2_b37
+GATK mutect2 bundle for b37 from GCP (gs://gatk-best-practices/somatic-b37)<br>Data source: <https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-b37>
 ## plot
-![## GCP_broad_gatk_hg38](/plots/gcp_broad_gatk_hg38.svg)
+![## gcp_gatk_mutect2_b37](/plots/gcp_gatk_mutect2_b37.svg)
 ## Inputs
 |         |label     |type    |description                                             |
 |:--------|:---------|:-------|:-------------------------------------------------------|
@@ -20,8 +20,9 @@ GATK annotation bundle for hg38 from GCP (gs://gcp-public-data--broad-references
 |gfile |gfile |File[] |The downloaded annotation files |
 ## Example:
 ```
-recipeLoad('gcp_broad_gatk_hg38', return = TRUE)
-gcp_broad_gatk_hg38$filename <- '1000G_omni2.5.hg38.vcf.gz'
-getData(gcp_broad_gatk_hg38, outdir = 'data/folder', notes = c('gcp', 'broad', 'reference', 'hg38', 'v0', '1000G', 'omni2.5')
+recipeLoad('gcp_gatk_mutect2_b37', return = TRUE)
+gcp_gatk_mutect2_b37$filename <- 'small_exac_common_3.vcf'
+gcp_gatk_mutect2_b37$idx <- 'idx'
+getData(gcp_gatk_mutect2_b37, outdir = 'data/folder', notes = c('gcp', 'broad', 'mutect2', 'small_exac_common')
 ```
 

@@ -2,7 +2,7 @@
 title: gencode transcripts
 description: Download, unzip, and index transcripts files from gencode
 Author: rworkflow team
-Last updated: 2022-12-12
+Last updated: 2022-12-19
 type: article
 ---
 ## gencode transcripts
