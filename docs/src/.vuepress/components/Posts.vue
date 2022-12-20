@@ -7,7 +7,7 @@
                     <v-card-title>{{ page.title }}</v-card-title>
                 </router-link>
                 <v-card-text>{{ page.frontmatter.description }}</v-card-text>
-                <v-card-text>Author: {{ page.frontmatter.author }}</v-card-text>
+                <v-card-text style="position: absolute; bottom: 0;">Author: {{ page.frontmatter.Author }}</v-card-text>
             </v-card>
         </v-col>
     </v-row>
