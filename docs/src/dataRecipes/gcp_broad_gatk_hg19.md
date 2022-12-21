@@ -1,8 +1,8 @@
 ---
-title: GCP broad gatk hg19
+title: GCP_broad_gatk_hg19
 description: GATK annotation bundle for hg19 from GCP (gs://gcp-public-data--broad-references/hg19/v0/)
 Author: rworkflow team
-Last updated: 2022-12-19
+Last updated: 2022-12-21
 type: article
 ---
 ## GCP_broad_gatk_hg19

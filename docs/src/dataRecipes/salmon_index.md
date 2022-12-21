@@ -1,12 +1,12 @@
 ---
-title: salmon index
-description: Salmon is a tool for wicked-fast transcript quantification from RNA-seq data. The recipe is to build a salmon index for your transcriptome. The script is prepared according to this instruction: https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/.
+title: salmon_index
+description: Salmon is a tool for wicked-fast transcript quantification from RNA-seq data. The recipe is to build a salmon index for your transcriptome. The script is prepared according to this instruction (https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/.)
 Author: rworkflow team
-Last updated: 2022-12-19
+Last updated: 2022-12-21
 type: article
 ---
 ## salmon_index
-Salmon is a tool for wicked-fast transcript quantification from RNA-seq data. The recipe is to build a salmon index for your transcriptome. The script is prepared according to this instruction: https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/.<br>Data source: <https://salmon.readthedocs.io/en/latest/salmon.html>
+Salmon is a tool for wicked-fast transcript quantification from RNA-seq data. The recipe is to build a salmon index for your transcriptome. The script is prepared according to this instruction (https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/.)<br>Data source: <https://salmon.readthedocs.io/en/latest/salmon.html>
 ## plot
 ![## salmon_index](/plots/salmon_index.svg)
 ## Inputs

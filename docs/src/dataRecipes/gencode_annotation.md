@@ -2,7 +2,7 @@
 title: gencode annotation
 description: Download and unzip annotation files from gencode
 Author: rworkflow team
-Last updated: 2022-12-19
+Last updated: 2022-12-21
 type: article
 ---
 ## gencode annotation

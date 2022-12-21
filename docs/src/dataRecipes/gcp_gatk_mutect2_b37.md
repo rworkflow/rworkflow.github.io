@@ -1,8 +1,8 @@
 ---
-title: gcp gatk mutect2 b37
+title: gcp_gatk_mutect2_b37
 description: GATK mutect2 bundle for b37 from GCP (gs://gatk-best-practices/somatic-b37)
 Author: rworkflow team
-Last updated: 2022-12-19
+Last updated: 2022-12-21
 type: article
 ---
 ## gcp_gatk_mutect2_b37

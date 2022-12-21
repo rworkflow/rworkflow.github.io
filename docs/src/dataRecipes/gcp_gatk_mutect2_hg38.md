@@ -1,8 +1,8 @@
 ---
-title: gcp gatk mutect2 hg38
+title: gcp_gatk_mutect2_hg38
 description: GATK mutect2 bundle for hg38 from GCP (gs://gatk-best-practices/somatic-hg38)
 Author: rworkflow team
-Last updated: 2022-12-19
+Last updated: 2022-12-21
 type: article
 ---
 ## gcp_gatk_mutect2_hg38

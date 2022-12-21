@@ -2,7 +2,7 @@
 title: reference genome
 description: Download (if not previously exist as a local file), rename (as *.fa), and index the reference genome with samtools and bwa
 Author: rworkflow team
-Last updated: 2022-12-19
+Last updated: 2022-12-21
 type: article
 ---
 ## reference genome

@@ -2,7 +2,7 @@
 title: gencode genome
 description: Download human genome GRCh38 from GENCODE release 42
 Author: rworkflow team
-Last updated: 2022-12-19
+Last updated: 2022-12-21
 type: article
 ---
 ## gencode genome
