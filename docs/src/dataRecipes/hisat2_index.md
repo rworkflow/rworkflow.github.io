@@ -1,5 +1,5 @@
 ---
-title: hisat2_index
+title: hisat2 index
 description: HISAT2 is a fast and sensitive alignment program for mapping next-generation sequencing reads (both DNA and RNA) to a population of human genomes as well as to a single reference genome. `hisat2-build` is used to build the index files.
 Author: rworkflow team
 Last updated: 2022-12-21

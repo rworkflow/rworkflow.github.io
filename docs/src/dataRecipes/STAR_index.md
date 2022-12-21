@@ -1,5 +1,5 @@
 ---
-title: STAR_index
+title: STAR index
 description: ultrafast universal RNA-seq and scRNAseq aligner
 Author: rworkflow team
 Last updated: 2022-12-21

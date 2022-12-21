@@ -1,5 +1,5 @@
 ---
-title: GCP_broad_gatk_hg38
+title: GCP broad gatk hg38
 description: GATK annotation bundle for hg38 from GCP (gs://gcp-public-data--broad-references/hg38/v0/)
 Author: rworkflow team
 Last updated: 2022-12-21

@@ -1,14 +1,14 @@
 ---
-title: genome liftover
+title: ensembl liftover
 description: Download and unzip genome liftover file from Ensembl
 Author: rworkflow team
 Last updated: 2022-12-21
 type: article
 ---
-## genome liftover
+## ensembl liftover
 Download and unzip genome liftover file from Ensembl<br>Data source: <https://ftp.ensembl.org/pub/assembly_mapping/>
 ## plot
-![## genome liftover](/plots/ensembl_liftover.svg)
+![## ensembl liftover](/plots/ensembl_liftover.svg)
 ## Inputs
 |        |label   |type   |description                                                                                    |
 |:-------|:-------|:------|:----------------------------------------------------------------------------------------------|

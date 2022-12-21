@@ -1,5 +1,5 @@
 ---
-title: bowtie2_index
+title: bowtie2 index
 description: Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing reads to long reference sequences. `bowtie2-build` is used to build the index files.
 Author: rworkflow team
 Last updated: 2022-12-21
