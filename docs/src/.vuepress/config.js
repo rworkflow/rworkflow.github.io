@@ -39,7 +39,7 @@ module.exports = {
       },
       {
         text: 'Rcwl Pipelines',
-        link: '/RcwlPipelines/',
+        link: '/RcwlRecipes/',
       },
       {
         text: 'Data Recipes',
