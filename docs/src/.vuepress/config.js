@@ -38,6 +38,10 @@ module.exports = {
         link: '/guide/',
       },
       {
+        text: 'Rcwl Pipelines',
+        link: '/RcwlPipelines/',
+      },
+      {
         text: 'Data Recipes',
         link: '/dataRecipes/',
       },

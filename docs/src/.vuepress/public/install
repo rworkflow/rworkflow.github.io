@@ -1,0 +1,44 @@
+env=$1
+
+OS=$(uname)
+if [[ "$OS" == "Linux" ]];
+then
+    curl micro.mamba.pm/install.sh | bash
+else
+    curl micro.mamba.pm/install.sh | zsh
+fi
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE="~/.local/bin/micromamba";
+export MAMBA_ROOT_PREFIX="~/micromamba";
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    if [ -f "~/micromamba/etc/profile.d/micromamba.sh" ]; then
+        . "~/micromamba/etc/profile.d/micromamba.sh"
+    else
+        export  PATH="~/micromamba/bin:$PATH"  # extra space after export prevents interference from conda init
+    fi
+fi
+unset __mamba_setup
+
+export PATH=~/.local/bin:$PATH
+
+micromamba create -n ${env:=rcwl} -y cwltool bioconductor-rcwlpipelines r-irkernel -c conda-forge -c bioconda
+if [[ "$OS" == "Linux" ]];
+then
+    micromamba install -y -n ${env:=rcwl} udocker -c conda-forge
+fi
+
+# Update cwl recipes and testing before starting a new R session
+~/micromamba/envs/${env:=rcwl}/bin/Rscript -e 'library(RcwlPipelines); cwlUpdate()'
+
+cat << EOF
+## refresh current bash, otherwise, start a new terminal
+
+source ~/.bashrc
+micromamba activate rcwl
+EOF
+

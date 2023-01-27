@@ -1,14 +1,14 @@
 ---
-title: GCP broad gatk hg38
+title: gcp broad gatk hg38
 description: GATK annotation bundle for hg38 from GCP (gs://gcp-public-data--broad-references/hg38/v0/)
 Author: rworkflow team
-Last updated: 2022-12-21
-type: article
+Last updated: 2023-01-05
+type: data_rcp
 ---
-## GCP_broad_gatk_hg38
-GATK annotation bundle for hg38 from GCP (gs://gcp-public-data--broad-references/hg38/v0/)<br>Data source: <https://console.cloud.google.com/storage/browser/gcp-public-data--broad-references/hg38/v0>
+## gcp_broad_gatk_hg38
+GATK annotation bundle for hg38 from GCP (gs://gcp-public-data--broad-references/hg38/v0/)<br>Recipe source code: <https://github.com/rworkflow/ReUseDataRecipe/blob/master/gcp_broad_gatk_hg38.R><br>Data source: <https://console.cloud.google.com/storage/browser/gcp-public-data--broad-references/hg38/v0>
 ## plot
-![## GCP_broad_gatk_hg38](/plots/gcp_broad_gatk_hg38.svg)
+![## gcp_broad_gatk_hg38](/plots/gcp_broad_gatk_hg38.svg)
 ## Inputs
 |         |label     |type    |description                                             |
 |:--------|:---------|:-------|:-------------------------------------------------------|

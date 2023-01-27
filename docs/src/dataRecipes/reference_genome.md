@@ -2,13 +2,13 @@
 title: reference genome
 description: Download (if not previously exist as a local file), rename (as *.fa), and index the reference genome with samtools and bwa
 Author: rworkflow team
-Last updated: 2022-12-21
-type: article
+Last updated: 2023-01-05
+type: data_rcp
 ---
-## reference genome
-Download (if not previously exist as a local file), rename (as *.fa), and index the reference genome with samtools and bwa<br>Data source: <http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/>; <http://ftp.ensembl.org/pub/release-104/fasta/homo_sapiens/dna/>; <http://ftp.ensembl.org/pub/release-104/fasta/mus_musculus/dna/>
+## reference_genome
+Download (if not previously exist as a local file), rename (as *.fa), and index the reference genome with samtools and bwa<br>Recipe source code: <https://github.com/rworkflow/ReUseDataRecipe/blob/master/reference_genome.R><br>Data source: <http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/>; <http://ftp.ensembl.org/pub/release-104/fasta/homo_sapiens/dna/>; <http://ftp.ensembl.org/pub/release-104/fasta/mus_musculus/dna/>
 ## plot
-![## reference genome](/plots/reference_genome.svg)
+![## reference_genome](/plots/reference_genome.svg)
 ## Inputs
 |      |label            |type        |description                                                                      |
 |:-----|:----------------|:-----------|:--------------------------------------------------------------------------------|

@@ -2,13 +2,13 @@
 title: ensembl liftover
 description: Download and unzip genome liftover file from Ensembl
 Author: rworkflow team
-Last updated: 2022-12-21
-type: article
+Last updated: 2023-01-05
+type: data_rcp
 ---
-## ensembl liftover
-Download and unzip genome liftover file from Ensembl<br>Data source: <https://ftp.ensembl.org/pub/assembly_mapping/>
+## ensembl_liftover
+Download and unzip genome liftover file from Ensembl<br>Recipe source code: <https://github.com/rworkflow/ReUseDataRecipe/blob/master/ensembl_liftover.R><br>Data source: <https://ftp.ensembl.org/pub/assembly_mapping/>
 ## plot
-![## ensembl liftover](/plots/ensembl_liftover.svg)
+![## ensembl_liftover](/plots/ensembl_liftover.svg)
 ## Inputs
 |        |label   |type   |description                                                                                    |
 |:-------|:-------|:------|:----------------------------------------------------------------------------------------------|
@@ -26,7 +26,7 @@ recipeLoad('ensembl_liftover', return = TRUE)
 ensembl_liftover$species <- 'human'
 ensembl_liftover$from <- 'GRCh37'
 ensembl_liftover$to <- 'GRCh38'
-getData(ensembl_liftover, outdir = 'data/folder', notes = c('grch37', 'grch38')
+getData(ensembl_liftover, outdir = 'data/folder', notes = c('grch37', 'grch38'))
 
 ## Get data from Google bucket directly
 dataUpdate('data/folder', cloud=TRUE)

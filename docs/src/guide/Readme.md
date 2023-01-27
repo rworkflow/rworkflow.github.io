@@ -1,30 +1,13 @@
-# RcwlPipelines (for users)
+# Quick installation
 
-The RcwlPipelines package manages a collection of Bioinformatics tools and pipeline recipes based on Rcwl. The pre-built and pre-tested tools and pipelines are highly modularized with easy customization to meet different bioinformatics data analysis needs.
+The quick installation script will install a conda environment with `r-base`, `Rcwl/RcwlPipelines` and other dependencies using `micromamba`.
 
-## Installation
-
-The package can be installed from Bioconductor (>= 3.9):
-
-``` r
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install("RcwlPipelines")
-	
-# Or from github
-BiocManager::install("rworkflow/RcwlPipelines")
+For Linux with shell `bash`:
+```bash
+curl rcwl.org/install | bash
 ```
 
-## Get started
-
-``` r
-cwlUpdate()
-cwlSearch("STAR")
-STAR <- cwlLoad("tl_STAR")
-```
-
-## User Guide
-
-``` r
-vignette(package = "RcwlPipelines")
+For MacOS with shell `zsh`:
+```bash
+curl rcwl.org/install | zsh
 ```

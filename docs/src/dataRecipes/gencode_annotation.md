@@ -2,13 +2,13 @@
 title: gencode annotation
 description: Download and unzip annotation files from gencode
 Author: rworkflow team
-Last updated: 2022-12-21
-type: article
+Last updated: 2023-01-05
+type: data_rcp
 ---
-## gencode annotation
-Download and unzip annotation files from gencode<br>Data source: <http://ftp.ebi.ac.uk/pub/databases/gencode/>
+## gencode_annotation
+Download and unzip annotation files from gencode<br>Recipe source code: <https://github.com/rworkflow/ReUseDataRecipe/blob/master/gencode_annotation.R><br>Data source: <http://ftp.ebi.ac.uk/pub/databases/gencode/>
 ## plot
-![## gencode annotation](/plots/gencode_annotation.svg)
+![## gencode_annotation](/plots/gencode_annotation.svg)
 ## Inputs
 |        |label   |type   |description                                                                                                                                                   |
 |:-------|:-------|:------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -24,7 +24,7 @@ Download and unzip annotation files from gencode<br>Data source: <http://ftp.ebi
 recipeLoad('gencode_annotation', return = TRUE)
 gencode_annotation$species <- 'human'
 gencode_annotation$version <- '42'
-getData(gencode_annotation, outdir = 'data/folder', notes = c('gencode', 'annotation', 'human', '42')
+getData(gencode_annotation, outdir = 'data/folder', notes = c('gencode', 'annotation', 'human', '42'))
 
 ## Get data from Google bucket directly
 dataUpdate('data/folder', cloud=TRUE)

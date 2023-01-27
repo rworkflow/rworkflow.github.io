@@ -1,14 +1,14 @@
 ---
-title: UCSC database
+title: ucsc database
 description: UCSC genome annotation database from UCSC golden path
 Author: rworkflow team
-Last updated: 2022-12-21
-type: article
+Last updated: 2023-01-05
+type: data_rcp
 ---
-## UCSC database
-UCSC genome annotation database from UCSC golden path<br>Data source: <https://hgdownload.soe.ucsc.edu/downloads.html>
+## ucsc_database
+UCSC genome annotation database from UCSC golden path<br>Recipe source code: <https://github.com/rworkflow/ReUseDataRecipe/blob/master/ucsc_database.R><br>Data source: <https://hgdownload.soe.ucsc.edu/downloads.html>
 ## plot
-![## UCSC database](/plots/ucsc_database.svg)
+![## ucsc_database](/plots/ucsc_database.svg)
 ## Inputs
 |       |label  |type   |description                                                  |
 |:------|:------|:------|:------------------------------------------------------------|
@@ -24,6 +24,6 @@ UCSC genome annotation database from UCSC golden path<br>Data source: <https://h
 recipeLoad('ucsc_database', return = TRUE)
 ucsc_database$build <- 'hg38'
 ucsc_database$dbname <- 'refGene'
-getData(ucsc_database, outdir = 'data/folder', notes = c('ucsc', 'annotation', 'database', 'hg38', 'refGene')
+getData(ucsc_database, outdir = 'data/folder', notes = c('ucsc', 'annotation', 'database', 'hg38', 'refGene'))
 ```
 

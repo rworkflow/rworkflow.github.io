@@ -2,11 +2,11 @@
 title: gcp gatk mutect2 b37
 description: GATK mutect2 bundle for b37 from GCP (gs://gatk-best-practices/somatic-b37)
 Author: rworkflow team
-Last updated: 2022-12-21
-type: article
+Last updated: 2023-01-05
+type: data_rcp
 ---
 ## gcp_gatk_mutect2_b37
-GATK mutect2 bundle for b37 from GCP (gs://gatk-best-practices/somatic-b37)<br>Data source: <https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-b37>
+GATK mutect2 bundle for b37 from GCP (gs://gatk-best-practices/somatic-b37)<br>Recipe source code: <https://github.com/rworkflow/ReUseDataRecipe/blob/master/gcp_gatk_mutect2_b37.R><br>Data source: <https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-b37>
 ## plot
 ![## gcp_gatk_mutect2_b37](/plots/gcp_gatk_mutect2_b37.svg)
 ## Inputs
@@ -23,6 +23,6 @@ GATK mutect2 bundle for b37 from GCP (gs://gatk-best-practices/somatic-b37)<br>D
 recipeLoad('gcp_gatk_mutect2_b37', return = TRUE)
 gcp_gatk_mutect2_b37$filename <- 'small_exac_common_3.vcf'
 gcp_gatk_mutect2_b37$idx <- 'idx'
-getData(gcp_gatk_mutect2_b37, outdir = 'data/folder', notes = c('gcp', 'broad', 'mutect2', 'small_exac_common')
+getData(gcp_gatk_mutect2_b37, outdir = 'data/folder', notes = c('gcp', 'broad', 'mutect2', 'small_exac_common'))
 ```
 

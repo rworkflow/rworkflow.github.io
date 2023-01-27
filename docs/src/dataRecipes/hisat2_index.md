@@ -2,11 +2,11 @@
 title: hisat2 index
 description: HISAT2 is a fast and sensitive alignment program for mapping next-generation sequencing reads (both DNA and RNA) to a population of human genomes as well as to a single reference genome. `hisat2-build` is used to build the index files.
 Author: rworkflow team
-Last updated: 2022-12-21
-type: article
+Last updated: 2023-01-05
+type: data_rcp
 ---
 ## hisat2_index
-HISAT2 is a fast and sensitive alignment program for mapping next-generation sequencing reads (both DNA and RNA) to a population of human genomes as well as to a single reference genome. `hisat2-build` is used to build the index files.<br>Data source: <http://daehwankimlab.github.io/hisat2/>
+HISAT2 is a fast and sensitive alignment program for mapping next-generation sequencing reads (both DNA and RNA) to a population of human genomes as well as to a single reference genome. `hisat2-build` is used to build the index files.<br>Recipe source code: <https://github.com/rworkflow/ReUseDataRecipe/blob/master/hisat2_index.R><br>Data source: <http://daehwankimlab.github.io/hisat2/>
 ## plot
 ![## hisat2_index](/plots/hisat2_index.svg)
 ## Inputs
@@ -21,6 +21,6 @@ HISAT2 is a fast and sensitive alignment program for mapping next-generation seq
 ```
 recipeLoad('hisat2_index.R', return = TRUE)
 hisat2_index$genome <- 'GRCh38.primary_assembly.genome.fa'
-getData(hisat2_index, outdir = 'data/folder', notes = c('hisat2_index', 'GRCh38.primary_assembly')
+getData(hisat2_index, outdir = 'data/folder', notes = c('hisat2_index', 'GRCh38.primary_assembly'))
 ```
 

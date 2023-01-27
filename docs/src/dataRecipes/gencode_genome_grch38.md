@@ -1,14 +1,14 @@
 ---
-title: gencode genome
+title: gencode genome grch38
 description: Download human genome GRCh38 from GENCODE release 42
 Author: rworkflow team
-Last updated: 2022-12-21
-type: article
+Last updated: 2023-01-05
+type: data_rcp
 ---
-## gencode genome
-Download human genome GRCh38 from GENCODE release 42<br>Data source: <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_42/GRCh38.primary_assembly.genome.fa.gz>
+## gencode_genome_grch38
+Download human genome GRCh38 from GENCODE release 42<br>Recipe source code: <https://github.com/rworkflow/ReUseDataRecipe/blob/master/gencode_genome_grch38.R><br>Data source: <https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_42/GRCh38.primary_assembly.genome.fa.gz>
 ## plot
-![## gencode genome](/plots/gencode_genome_grch38.svg)
+![## gencode_genome_grch38](/plots/gencode_genome_grch38.svg)
 ## Inputs
 
 ## Outputs
