@@ -1,0 +1,40 @@
+env=$1
+OS=$(uname)
+
+if ! command -v conda &> /dev/null
+then
+    bash <(curl -sSL conda.sh)
+fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('~/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "~/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "~/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="~/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+conda config --add channels conda-forge
+conda config --add channels bioconda
+conda create -n ${env:=rcwl} -y cwltool cwl-utils bioconductor-rcwlpipelines bioconductor-reusedata r-irkernel
+if [[ "$OS" == "Linux" ]];
+then
+    conda install -y -n ${env:=rcwl} udocker
+fi
+
+# Update cwl recipes and testing before starting a new R session
+~/miniconda3/envs/${env:=rcwl}/bin/Rscript -e 'library(RcwlPipelines); cwlUpdate()'
+
+cat << EOF
+## refresh current bash, otherwise, start a new terminal
+
+source ~/.bashrc
+conda activate rcwl
+EOF
